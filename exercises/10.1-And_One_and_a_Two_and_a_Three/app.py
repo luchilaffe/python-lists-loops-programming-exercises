@@ -5,4 +5,4 @@ contact = {
 }
 #Your code here:
 for i in contact.items():
-    print(i)
+    print(i[0] + " : " + i[1])

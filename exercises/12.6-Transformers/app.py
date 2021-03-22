@@ -7,5 +7,8 @@ incomingAJAXData = [
 ]
 
 #Your code go here:
+def my_var(xe):
+    return xe["name"] + " " + xe["lastName"]
 
-
+transformedData = list(map(lambda person: my_var(person), incomingAJAXData))
+print(transformedData)
